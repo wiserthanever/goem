@@ -28,7 +28,7 @@ elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
 else
     # For other environments, meaning most Unix-like systems.
     echo "Building goem..."
-    iDir=/usr/local/bin
+    iDir=${GOPATH}/bin
     bName=goem
 fi
 
